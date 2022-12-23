@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-complete-guide-update": {
+    "recipe-book-ngrx": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "recipe-book-ngrx"
+  "defaultProject": "recipe-book-ngrx",
+  "cli": {
+    "analytics": false
+  }
 }

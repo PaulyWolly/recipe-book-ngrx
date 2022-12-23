@@ -4,7 +4,7 @@ import { Store } from '@ngrx/store';
 import { HttpClient } from '@angular/common/http';
 import { switchMap, map, withLatestFrom } from 'rxjs/operators';
 
-import * as RecipesActions from './recipe.actions';
+import * as RecipeActions from './recipe.actions';
 import { Recipe } from '../recipe.model';
 import * as fromApp from '../../store/app.reducer';
 
@@ -12,7 +12,7 @@ import * as fromApp from '../../store/app.reducer';
 export class RecipeEffects {
   @Effect()
   fetchRecipes = this.actions$.pipe(
-    ofType(RecipesActions.FETCH_RECIPES),
+    ofType(RecipeActions.FETCH_RECIPES),
     switchMap(() => {
       return this.http.get<Recipe[]>(
         'https://ng-recipe-book-86d0a-default-rtdb.firebaseio.com/recipes.json'
@@ -28,13 +28,13 @@ export class RecipeEffects {
       });
     }),
     map(recipes => {
-      return new RecipesActions.SetRecipes(recipes);
+      return new RecipeActions.SetRecipes(recipes);
     })
   );
 
   @Effect({dispatch: false})
   storeRecipes = this.actions$.pipe(
-    ofType(RecipesActions.STORE_RECIPES),
+    ofType(RecipeActions.STORE_RECIPES),
     withLatestFrom(this.store.select('recipes')),
     switchMap(([actionData, recipesState]) => {
       return this.http.put(
