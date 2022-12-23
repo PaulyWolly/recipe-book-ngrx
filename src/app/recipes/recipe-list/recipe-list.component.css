@@ -1,0 +1,20 @@
+.list-container {
+  margin-bottom: 100px;
+}
+
+div.scroll {
+  margin:4px, 4px;
+  padding:10px;
+  background-color: rgb(235, 237, 235);
+  width: 500px;
+  height: 650px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align:justify;
+  border: 2px solid rgb(194, 192, 192) !important;
+  border-radius: 5px;
+}
+
+div.scroll-row {
+  border: 1px soid rgb(194, 192, 192);
+}

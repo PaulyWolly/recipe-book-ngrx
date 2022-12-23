@@ -1,0 +1,21 @@
+li.loggedInUser {
+  position: relative;
+  top: 15px;
+  /* margin-right: 30px; */
+}
+input.loggedInUser.ng-pristine.ng-valid {
+  border: none;
+  position: relative;
+  margin-right: 20px;
+  background-color: transparent;
+  font-weight: bold;
+}
+.navbar, .dropdown-menu {
+  font-size: 16px;
+}
+
+.navbar-brand {
+  color: blue;
+  font-size: 24px;;
+}
+
