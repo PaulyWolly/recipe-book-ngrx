@@ -17,5 +17,12 @@ input.loggedInUser.ng-pristine.ng-valid {
 .navbar-brand {
   color: blue;
   font-size: 20px;
+  margin-left:20px;
+  position: relative;
+  left:10px;
 }
 
+.recipe-links {
+  position: relative;
+  left:25px;
+}
