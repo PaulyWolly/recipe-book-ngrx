@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
   <div class="container-fluid">
     <div class="navbar-header">
       <a routerLink="/" class="navbar-brand">Recipe Book</a>
@@ -24,9 +24,10 @@
           <a style="cursor: pointer;" (click)="onLogout()">Logout</a>
         </li>
         <li class="dropdown" appDropdown *ngIf="isAuthenticated">
-          <a style="cursor: pointer;" class="dropdown-toggle" role="button"
-            >Manage <span class="caret"></span
-          ></a>
+          <a style="cursor: pointer;" class="dropdown-toggle" role="button">
+            Manage
+            <!-- <span class="caret"></span -->
+          </a>
           <ul class="dropdown-menu">
             <li>
               <a style="cursor: pointer;" (click)="onSaveData()">Save Data</a>

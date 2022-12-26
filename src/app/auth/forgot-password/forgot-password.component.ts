@@ -24,24 +24,32 @@ export class ForgotPasswordComponent {
 
   forgotPassword(email: any) {
 
+    const validEmailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    if (email === '') {
+      alert('Please enter an email!');
+    } else if (email.value.match(validEmailFormat)) {
+      alert('Please enter  VALID email!');
+    }
+
     // Firebase API Key
     const APIKey = environment.firebaseAPIKey;
     const fbUrl = 'https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key=' + APIKey;
 
-    //console.log('email: ', email);
+    // console.log('email: ', email);
 
     this.http
       .post(
         fbUrl,
         {
-          email: email,
+          email,
           requestType: 'PASSWORD_RESET'
         }
       )
       .subscribe((theEmail) => {
-        console.log("email in subscribe: ", theEmail)
-        alert("Password reset has been sent to your email. If you don't see the reset email in your INBOX then please check your SPAM folder.")
+        console.log('email in subscribe: ', theEmail);
+        alert('Password reset has been sent to your email. If you don\'t see the reset email in your INBOX then please check your SPAM folder.');
         this.route.navigate(['/auth']);
-      })
+      });
   }
 }
