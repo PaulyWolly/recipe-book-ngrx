@@ -3,6 +3,11 @@ li.loggedInUser {
   top: 15px;
   /* margin-right: 30px; */
 }
+
+li.active {
+  background-color: #e6e4e4;
+}
+
 input.loggedInUser.ng-pristine.ng-valid {
   border: none;
   position: relative;
@@ -28,6 +33,7 @@ input.loggedInUser.ng-pristine.ng-valid {
 .recipe-links {
   position: relative;
   left:25px;
+  z-index: 1000;
 }
 /* Show it is fixed to the top */
 
