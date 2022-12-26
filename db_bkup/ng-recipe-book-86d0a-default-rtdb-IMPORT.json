@@ -1,0 +1,251 @@
+{
+  "recipes": [
+    {
+      "description": "KFC Coleslaw recipe",
+      "directions": "1/2 cup of mayonnaise, 1/3 cup granulated sugar, 1/4 cup milk, 1/4 cup buttermilk, 2 1/2 tbsp. lemon juice, 1 1/2 tbsp. white vinegar, 1/2 tsp salt, 1/8 tsp pepper, For the slaw - 1 head of cabbage, 1 medium carrot, and 2 tbsp. minced onion.\n\nChop cabbage into chunks, and run through food processor, to make a fine chop. Combine all ingredients for dressing into a large bowl and mix well. Combine all vegetables and mix well. Pour dressing over the slaw and coat well (mix). Cover and refrigerate for AT LEAST 4 HOURS... Overnight is better.",
+      "imagePath": "../assets/img/Coleslaw.jpg",
+      "ingredients": [
+        {
+          "amount": 1,
+          "name": "mayonaise"
+        },
+        {
+          "amount": 1,
+          "name": "Sugar, granulated"
+        },
+        {
+          "amount": 1,
+          "name": "milk"
+        },
+        {
+          "amount": 1,
+          "name": "Buttermilk"
+        },
+        {
+          "amount": 1,
+          "name": "Lemon juice"
+        },
+        {
+          "amount": 1,
+          "name": "White vinegar"
+        },
+        {
+          "amount": 1,
+          "name": "Salt"
+        },
+        {
+          "amount": 1,
+          "name": "Pepper"
+        }
+      ],
+      "name": "KFC Coleslaw Recipe"
+    },
+    {
+      "description": "This is a big burger with cheese!",
+      "directions": "This burger is HUGE!!! Just follow the steps to make it: - Edited by Paul",
+      "imagePath": "../../assets/img/Burger_with_cheese.jpg",
+      "ingredients": [
+        {
+          "amount": 1,
+          "name": "Burger"
+        },
+        {
+          "amount": 1,
+          "name": "Cheese"
+        },
+        {
+          "amount": 1,
+          "name": "bun"
+        }
+      ],
+      "name": "Big Burger with cheese"
+    },
+    {
+      "description": "Mac and Cheese",
+      "directions": "Step 1: Cook pasta\nStep 2: Add teh cheese\nStep 3: bake for 1 hour at 350\nStep 4: ENJOY!!!",
+      "imagePath": "../../assets/img/Mac-n-Cheese1.jpg",
+      "ingredients": [
+        {
+          "amount": 1,
+          "name": "Pasta"
+        },
+        {
+          "amount": 5,
+          "name": "Cheese"
+        }
+      ],
+      "name": "Mac-n-Cheese"
+    },
+    {
+      "description": "Baked boston beans so yummy!",
+      "directions": "add all ingredients together and then bake for 8 hours",
+      "imagePath": "../assets/img/baked_beans.jpg",
+      "ingredients": [
+        {
+          "amount": 5,
+          "name": "Beans"
+        },
+        {
+          "amount": 5,
+          "name": "brown sugar"
+        }
+      ],
+      "name": "Baked Beans a la Paul (2)"
+    },
+    {
+      "description": "Lamb Riblets BBQ",
+      "directions": "Same as the broiled version but cooked on a BBQ grill",
+      "imagePath": "../assets/img/Lamb-Riblets.jpg",
+      "ingredients": [
+        {
+          "amount": 12,
+          "name": "Lamb Riblets"
+        },
+        {
+          "amount": 1,
+          "name": "Sal/Pepper"
+        },
+        {
+          "amount": 1,
+          "name": "Garlic"
+        },
+        {
+          "amount": 1,
+          "name": "Lemon"
+        },
+        {
+          "amount": 1,
+          "name": "Rosemary"
+        }
+      ],
+      "name": "Lamb Riblets BBQ"
+    },
+    {
+      "description": "Basic Jambalaya - by Paul",
+      "directions": "First cook the rice till it is soft. Then cook the sausage till golden brown. Add all ingredients into a pan and add a splash (pinch) of Saffron. Simmer for about 1.5 hours",
+      "imagePath": "../assets/img/Jambalaya-sausage-shrimp.jpg",
+      "ingredients": [
+        {
+          "amount": 12,
+          "name": "Rice"
+        },
+        {
+          "amount": 4,
+          "name": "Sausage (prefer Andouille)"
+        },
+        {
+          "amount": 12,
+          "name": "Shrimp"
+        },
+        {
+          "amount": 1,
+          "name": "Saffron"
+        }
+      ],
+      "name": "Jambalaya"
+    },
+    {
+      "description": "Cream cheese, Olive with pimentos and Bread",
+      "directions": "Take out 2 pieces of bread and spread cream cheese on one side. Cut the Olives in half and place them on top of the cream cheese next to each other. Place the second piece of bread on top and cut the sandwich in half. ",
+      "imagePath": "http://2.bp.blogspot.com/-kdZzhVcdQqo/UhqXwnwUXwI/AAAAAAAAKKE/TN5GrRrbZ40/s1600/Cream+Cheese+and+Olive+Sandwich.jpg",
+      "ingredients": [
+        {
+          "amount": 2,
+          "name": "bread"
+        },
+        {
+          "amount": 12,
+          "name": "green olives with pimentos"
+        },
+        {
+          "amount": 1,
+          "name": "cream cheese"
+        }
+      ],
+      "name": "Cream cheese and Olive sandwich"
+    },
+    {
+      "description": "Chicken, broth, veggies and noodles",
+      "directions": "All the ingredients for this soup are put into a pot and simmered for 2 hours",
+      "imagePath": "https://media.istockphoto.com/id/671803730/photo/wholesome-chicken-soup-stew.jpg?s=612x612&w=0&k=20&c=u_Ekrfp5Dk-ZO-jr0LNQ4OXL5a_AYLBniUwMNuNoLGg=",
+      "ingredients": [
+        {
+          "amount": 1,
+          "name": "chikcken",
+          "unit": "piece"
+        },
+        {
+          "amount": 1,
+          "name": "veggies",
+          "unit": "piece"
+        },
+        {
+          "amount": 1,
+          "name": "noodles",
+          "unit": "piece"
+        }
+      ],
+      "name": "Chicken Soup - v4"
+    },
+    {
+      "description": "Tuna Noodle Casserole. Easy yet yummy",
+      "directions": "Cook the noodles first. Add all ingredients to a large bowl and mix well. Add noodles when cooked. Mix again. Bake for 45 minutes at 425F",
+      "imagePath": "../assets/img/Tuna-Noodle-Casserole.jpg",
+      "ingredients": [
+        {
+          "amount": 1,
+          "name": "Egg Noodles"
+        },
+        {
+          "amount": 1,
+          "name": "Mushroom Soup"
+        },
+        {
+          "amount": 1,
+          "name": "Peas"
+        },
+        {
+          "amount": 1,
+          "name": "Bread Crumbs"
+        },
+        {
+          "amount": 1,
+          "name": "Butter"
+        },
+        {
+          "amount": 1,
+          "name": "Salt"
+        },
+        {
+          "amount": 1,
+          "name": "Pepper"
+        }
+      ],
+      "name": "Tuna Noodle Casserole"
+    },
+    {
+      "description": "PAUL PAUL PAUL ... YUMMY!",
+      "directions": "Beef stock, Onions, Gruyere cheese and croutons",
+      "imagePath": "../assets/img/onion-soup.jpg",
+      "ingredients": [
+        {
+          "amount": 10,
+          "name": "Beef stock"
+        },
+        {
+          "amount": 10,
+          "name": "Onions, lots"
+        },
+        {
+          "amount": 2,
+          "name": "Gruyere cheese"
+        },
+        {
+          "amount": 5,
+          "name": "Garlic Croutons"
+        }
+      ],
+      "name": "Paul's Onion Soup"
+    }
+  ]
+}
