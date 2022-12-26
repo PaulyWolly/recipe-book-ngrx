@@ -17,6 +17,7 @@ div.scroll {
   text-align:justify;
   border: 2px solid rgb(194, 192, 192) !important;
   border-radius: 5px;
+  z-index: 1;
 }
 
 div.scroll-row {
