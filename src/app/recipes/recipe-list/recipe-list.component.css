@@ -2,6 +2,8 @@
   margin-bottom: 100px;
   position: relative;
   top: 100px;
+  width: 475px;
+  /* z-index: 1000; */
 }
 
 div.scroll {
@@ -19,4 +21,10 @@ div.scroll {
 
 div.scroll-row {
   border: 1px soid rgb(194, 192, 192);
+  /* z-index: 1001; */
+}
+
+div.recipe-edit.col-xs-12 {
+  position: relative;
+  left: -150px;
 }

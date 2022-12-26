@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { Subscription } from 'rxjs';
 import { Router } from '@angular/router';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-forgot-password',
@@ -17,6 +18,8 @@ export class ForgotPasswordComponent {
   APIKey: string;
   error: any = '';
 
+  emailFormControl = new FormControl('', [Validators.required, Validators.email]);
+
   constructor(
     private http: HttpClient,
     private route: Router
@@ -24,12 +27,10 @@ export class ForgotPasswordComponent {
 
   forgotPassword(email: any) {
 
-    const validEmailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
     if (email === '') {
       alert('Please enter an email!');
-    } else if (email.value.match(validEmailFormat)) {
-      alert('Please enter  VALID email!');
     }
 
     // Firebase API Key

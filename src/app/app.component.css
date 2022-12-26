@@ -5,7 +5,7 @@
 
 .container {
   margin-top: 0px;
-  height: 1200px;
+  height: 1500px;
 }
 
 .background {
@@ -14,9 +14,9 @@
 }
 
 .head {
-  border-bottom: 1px solid #1f6a7d9c;
+  /* border-bottom: 1px solid #1f6a7d9c; */
   /* padding: 15px; */
-  width: 101%;
+  width: 102%;
   z-index: 99;
   background: white;
   position: -webkit-sticky;
@@ -36,9 +36,9 @@
 
 .scrolled {
   transition: 0.3s;
-  background: #84bcd8f8;
-  height: 80px;
-  border-bottom: 2px solid #1f6a7de1;
+  /* background: #84bcd8f8; */
+  height: 65px;
+  /* border-bottom: 2px solid #959696e1; */
 }
 .text_style {
   font-size: 30px;
