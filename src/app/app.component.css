@@ -19,7 +19,7 @@
   width: 102%;
   z-index: 99;
   background: white;
-  position: -webkit-sticky;
+  /* position: -webkit-sticky; */
   position: fixed;
   left:2px;
   height: 66px;
