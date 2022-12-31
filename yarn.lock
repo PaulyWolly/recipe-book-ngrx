@@ -136,6 +136,15 @@
   dependencies:
     tslib "^2.0.0"
 
+"@angular/cdk@^10.2.7":
+  version "10.2.7"
+  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-10.2.7.tgz#0ff82eb91b2653ea26909c57a460d4593b44f186"
+  integrity sha512-ZQjDfTRTn7JuAKsf3jiIdU2XBaxxGBi/ZWYv5Pb3HCl6B4PISsIE5VWRhkoUogoAB0MiFHpjnWeIqknJEm11YQ==
+  dependencies:
+    tslib "^2.0.0"
+  optionalDependencies:
+    parse5 "^5.0.0"
+
 "@angular/cli@^10.2.4":
   version "10.2.4"
   resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-10.2.4.tgz#f8899eee8f774cd805b1831a8f2f865024e9f4e1"
@@ -213,6 +222,13 @@
   version "10.2.5"
   resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-10.2.5.tgz#dc869591684db32696f9973647f07355bdaf97ff"
   integrity sha512-e9ug9TJG31SeSWl65TglXKWOIATGu/P0jVSGKxGF22vQYlAahdRoFXP56+B9P9k+6cDuYljkjH1rdyCaU3iOPg==
+
+"@angular/material@~10.2.7":
+  version "10.2.7"
+  resolved "https://registry.yarnpkg.com/@angular/material/-/material-10.2.7.tgz#b84aeeca997dc64fbcc7969540e22434315bab68"
+  integrity sha512-uk6JkRrKHaM9VFMzX7pWC83YNLVgXPB3D8U1yjSOafCdWwrRZgUHGr8MPlSILCr3o2nxgg5SsKdWcWwHuXXUZA==
+  dependencies:
+    tslib "^2.0.0"
 
 "@angular/platform-browser-dynamic@^10.2.5":
   version "10.2.5"
@@ -1179,25 +1195,31 @@
     merge-source-map "^1.1.0"
     schema-utils "^2.7.0"
 
-"@ngrx/effects@^8.0.0-beta.2":
-  version "8.6.1"
-  resolved "https://registry.yarnpkg.com/@ngrx/effects/-/effects-8.6.1.tgz#6038a5e9cc3db27fdea4cfbcc6e2ae63721e8a26"
-  integrity sha512-nvokfJ+LXez3DuAVSWW4w/eMrjPoSpzyHSToIVbDTVIF4JZ3g8fKdi9aHYAeXy2MDR1BaV7zMTmM9w6J0TDZtw==
+"@ngrx/effects@^10.0.0":
+  version "10.1.2"
+  resolved "https://registry.yarnpkg.com/@ngrx/effects/-/effects-10.1.2.tgz#f1c9daa2e3e13aeb6af272cb52f6dff73d364d68"
+  integrity sha512-6pX6FEzLlqdbtFVMbCvscsaL6QC/L95e72JKj76Xz+8V77UTlpVsxWyMo7YU9pM4EXNpBGmOpMs2xKjfBfK05Q==
+  dependencies:
+    tslib "^2.0.0"
 
-"@ngrx/router-store@^8.0.0-beta.2":
-  version "8.6.1"
-  resolved "https://registry.yarnpkg.com/@ngrx/router-store/-/router-store-8.6.1.tgz#b631f8d6d2b7204ab3396b9d678f0134c674fe3d"
-  integrity sha512-WOFSpxfaePoFu6gYJbXs7vBH8YG/m27ySeN9jBmlO94CkwWN9w3XXQebMVu47EoKO+YpMlF2l2Ifakhefq0TWQ==
+"@ngrx/router-store@^10.0.0":
+  version "10.1.2"
+  resolved "https://registry.yarnpkg.com/@ngrx/router-store/-/router-store-10.1.2.tgz#f8083121611ba72450998eb37dffc26dd17f8ab0"
+  integrity sha512-IBsZee5ZUmLbXkY/O4OjhJP1Q6mdu4lcLcQ9jeXsdCMH/Vvc0EGK+MlhsZrxv5+v2ZXb1bhtKsLBUsTovanLWA==
+  dependencies:
+    tslib "^2.0.0"
 
 "@ngrx/store-devtools@^8.0.0-beta.2":
   version "8.6.1"
   resolved "https://registry.yarnpkg.com/@ngrx/store-devtools/-/store-devtools-8.6.1.tgz#6fea7ba2544a35f606ccaa3c3be5251fece65b71"
   integrity sha512-rWW8FMKgb3paKmlhS8T/T3Sjm4w2WiQAOKU2cXy8D4ZrGTrFhaZDxHsn7eo+l3AN1EMXQh/w/eNLpevtCrO/wg==
 
-"@ngrx/store@^8.0.0-beta.2":
-  version "8.6.1"
-  resolved "https://registry.yarnpkg.com/@ngrx/store/-/store-8.6.1.tgz#ee4c7d3b8bcc59cf042ae76e6743130408e9b2d8"
-  integrity sha512-bV7X0hNywd6N5YroWdZffIEvLKdHZo/l4tCK9FC/o5OezVyPRKZ6QVHz8e2jnLvqj55XzOJNR/tsYh4iuVi2pg==
+"@ngrx/store@^10.0.0":
+  version "10.1.2"
+  resolved "https://registry.yarnpkg.com/@ngrx/store/-/store-10.1.2.tgz#a41aee81ea7b7e4a9f927be560e6024830211efb"
+  integrity sha512-FUjN786ch4Qt9WgJ78ef7Yquq3mPCekgcWgZrs4ycZw1f+KdfTHLTk1bGDtO8A8CzOya5yTT7KhxbdVjbOS5ng==
+  dependencies:
+    tslib "^2.0.0"
 
 "@ngtools/webpack@10.2.4":
   version "10.2.4"
@@ -1293,6 +1315,13 @@
   dependencies:
     "@types/jasmine" "*"
 
+"@types/jquery@^3.5.14":
+  version "3.5.16"
+  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.5.16.tgz#632131baf30951915b0317d48c98e9890bdf051d"
+  integrity sha512-bsI7y4ZgeMkmpG9OM710RRzDFp+w4P1RGiIt30C1mSBT+ExCleeh4HObwgArnDFELmRrOpXgSYN9VF1hj+f1lw==
+  dependencies:
+    "@types/sizzle" "*"
+
 "@types/json-schema@^7.0.5":
   version "7.0.11"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.11.tgz#d421b6c527a3037f7c84433fd2c4229e016863d3"
@@ -1327,6 +1356,11 @@
   version "3.0.20"
   resolved "https://registry.yarnpkg.com/@types/selenium-webdriver/-/selenium-webdriver-3.0.20.tgz#448771a0608ebf1c86cb5885914da6311e323c3a"
   integrity sha512-6d8Q5fqS9DWOXEhMDiF6/2FjyHdmP/jSTAUyeQR7QwrFeNmYyzmvGxD5aLIHL445HjWgibs0eAig+KPnbaesXA==
+
+"@types/sizzle@*":
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@types/sizzle/-/sizzle-2.3.3.tgz#ff5e2f1902969d305225a047c8a0fd5c915cebef"
+  integrity sha512-JYM8x9EGF163bEyhdJBpR2QX1R5naCJHC8ucJylJ3w9/CVBaskdQ8WqBf8MmQrd1kRvp/a4TS8HJ+bxzR7ZJYQ==
 
 "@types/source-list-map@*":
   version "0.1.2"
@@ -2032,10 +2066,10 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==
 
-bootstrap@3.3.7:
-  version "3.3.7"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.3.7.tgz#5a389394549f23330875a3b150656574f8a9eb71"
-  integrity sha512-qcFaisBrcBhTFkz1IUnGDYnX6ZWfFzH8zOixUDtHW9Ip+r+7MfMFav2rzy7cIHc7rgIg7xjhWBoo1mS/U26j4g==
+bootstrap@^3.3.7:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.4.1.tgz#c3a347d419e289ad11f4033e3c4132b87c081d72"
+  integrity sha512-yN5oZVmRCwe5aKwzRj6736nSmKDX7pLYwsXiCj/EYmo16hODaBiT4En5btW/jhBF/seV+XMx3aYwukYC3A49DA==
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -5718,6 +5752,11 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
+material-design@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/material-design/-/material-design-0.0.1.tgz#356597162bcdeda609a54351ba4199973135cef1"
+  integrity sha512-WL1TCaj1skFZu6xbwqro0MPzvUkiDyt+88822lSZQmcmIZw3k0y4AGswm9EFT3udYuGrqQNKNAk4AUIP6tydwA==
+
 md5.js@^1.3.4:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/md5.js/-/md5.js-1.3.5.tgz#b5d07b8e3216e3e27cd728d72f70d1e6a342005f"
@@ -6587,6 +6626,11 @@ parse5@6.0.1, parse5@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-6.0.1.tgz#e1a1c085c569b3dc08321184f19a39cc27f7c30b"
   integrity sha512-Ofn/CTFzRGTTxwpNEs9PP93gXShHcTq255nzRYSKe8AkVpZY7e1fpmTfOyoIvjP5HG7Z2ZM7VS9PPhQGW2pOpw==
+
+parse5@^5.0.0:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/parse5/-/parse5-5.1.1.tgz#f68e4e5ba1852ac2cadc00f4555fff6c2abb6178"
+  integrity sha512-ugq4DFI0Ptb+WWjAdOK16+u/nHfiIrcE+sh8kZMaM0WllQKLI9rOUq6c2b7cwPkXdzfQESqvoqK6ug7U/Yyzug==
 
 parseqs@0.0.6:
   version "0.0.6"

@@ -15,6 +15,7 @@ import * as fromApp from '../store/app.reducer';
 import * as AuthActions from './store/auth.actions';
 import * as RecipesActions from '../recipes/store/recipe.actions';
 
+
 @Component({
   selector: 'app-auth',
   templateUrl: './auth.component.html',
@@ -43,6 +44,7 @@ export class AuthComponent implements OnInit, OnDestroy {
         this.showErrorAlert(this.error);
       }
     });
+
   }
 
   onSwitchMode() {

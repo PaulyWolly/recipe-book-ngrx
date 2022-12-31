@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+/* Styles to create a font shadow */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 .detail-text, .form-control {
   font-size: 16px;
@@ -7,8 +9,7 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-/* Styles to create a font shadow */
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
 
 .font-shadow {
   margin: 40px auto;
