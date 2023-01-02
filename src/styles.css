@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-/* Styles to create a font shadow */
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
+/* Styles to create a font shadow */
 .detail-text, .form-control {
   font-size: 16px;
 }
