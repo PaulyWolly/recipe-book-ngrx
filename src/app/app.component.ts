@@ -36,18 +36,9 @@ export class AppComponent implements OnInit {
     private readonly viewport: ViewportScroller
   ) { }
 
-
   ngOnInit() {
     this.store.dispatch(new AuthActions.AutoLogin());
     this.loggingService.printLog('Hello from AppComponent ngOnInit');
-
-    for (let i = 0; i < 15; i++) {
-      this.data.push({ id: ( i + 1), text: environment.text });
-    }
-  }
-
-  trackByIdFn(_: number, data: { id: number, text: string }): number {
-    return data.id;
   }
 
   onScrollToTop(): void {
