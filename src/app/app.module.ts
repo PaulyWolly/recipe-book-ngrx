@@ -20,6 +20,9 @@ import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { MaterialModule } from './material.module';
+import { ScrollComponent } from './scroll/scroll.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 
 
@@ -27,7 +30,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   declarations: [
     AppComponent,
     HeaderComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    ScrollComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +46,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     BrowserAnimationsModule,
     // MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatButtonModule,
+    MatIconModule,
   ],
   bootstrap: [AppComponent]
   // providers: [LoggingService]
