@@ -18,7 +18,12 @@ import { map } from 'rxjs/operators';
 })
 export class AppComponent implements OnInit {
 
-  data: { id: number, text: string }[] = [];
+  constructor(
+    private store: Store<fromApp.AppState>,
+    private loggingService: LoggingService,
+    @Inject(DOCUMENT) private readonly document: Document,
+    private readonly viewport: ViewportScroller
+  ) { }
 
   readonly showScroll$: Observable<boolean> = fromEvent(
     this.document,
@@ -26,13 +31,6 @@ export class AppComponent implements OnInit {
   ).pipe(
     map(() => this.viewport.getScrollPosition()?.[1] > 0)
   );
-
-  constructor(
-    private store: Store<fromApp.AppState>,
-    private loggingService: LoggingService,
-    @Inject(DOCUMENT) private readonly document: Document,
-    private readonly viewport: ViewportScroller
-  ) { }
 
   ngOnInit() {
     this.store.dispatch(new AuthActions.AutoLogin());
