@@ -17,6 +17,8 @@ export class RecipeEditComponent implements OnInit, OnDestroy {
   id: number;
   editMode = false;
   recipeForm: FormGroup;
+  newRecipe = false;
+
 
   private storeSub: Subscription;
 
@@ -68,7 +70,7 @@ export class RecipeEditComponent implements OnInit, OnDestroy {
   onAddIngredient() {
     (this.recipeForm.get('ingredients') as FormArray).push(
       new FormGroup({
-        name: new FormControl(null, Validators.required),
+        ingrName: new FormControl(null, Validators.required),
         amount: new FormControl(null, [
           Validators.required,
           Validators.pattern(/^[1-9]+[0-9]*$/)

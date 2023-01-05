@@ -15,6 +15,7 @@ import * as fromApp from '../../store/app.reducer';
 export class RecipeListComponent implements OnInit, OnDestroy {
   recipes: Recipe[];
   subscription: Subscription;
+  updateRecipe = false;
 
   constructor(
     private router: Router,
@@ -32,6 +33,7 @@ export class RecipeListComponent implements OnInit, OnDestroy {
   }
 
   onNewRecipe() {
+    this.updateRecipe = false;
     this.router.navigate(['new'], { relativeTo: this.route });
   }
 
