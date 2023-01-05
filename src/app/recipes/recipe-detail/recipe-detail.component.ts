@@ -16,6 +16,7 @@ import * as ShoppingListActions from '../../shopping-list/store/shopping-list.ac
 export class RecipeDetailComponent implements OnInit {
   recipe: Recipe;
   id: number;
+  updateRecipe = true;
 
   constructor(
     private route: ActivatedRoute,
@@ -53,6 +54,7 @@ export class RecipeDetailComponent implements OnInit {
   }
 
   onEditRecipe() {
+    this.updateRecipe = true;
     this.router.navigate(['edit'], { relativeTo: this.route });
     // this.router.navigate(['../', this.id, 'edit'], {relativeTo: this.route});
 
