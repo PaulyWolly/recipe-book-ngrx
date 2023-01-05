@@ -10,8 +10,6 @@ import { DOCUMENT, ViewportScroller } from '@angular/common';
 import { fromEvent, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-import { environment } from '../environments/environment';
-
 
 @Component({
   selector: 'app-root',
