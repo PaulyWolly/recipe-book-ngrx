@@ -1,8 +1,14 @@
-<app-header></app-header>
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <router-outlet></router-outlet>
+<ng-container *ngIf="showScroll$ | async">
+  <app-scroll (scrollToTop)="onScrollToTop()"></app-scroll>
+</ng-container>
+<div class="main-container">
+  <div class="container  ">
+    <div class="row head">
+      <div class="col-md-12">
+        <app-header></app-header>
+      </div>
     </div>
+    <router-outlet></router-outlet>
   </div>
 </div>
+<!--  -->

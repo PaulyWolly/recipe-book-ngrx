@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sticky Header</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+body {
+font-size: 29px;
+}
+#navbar a {
+text-align: center;
+padding: 12px 15px;
+text-decoration: none;
+font-size: 22px;
+}
+.content {
+padding: 12px;
+}
+.stickyHeader {
+position: fixed;
+width: 100%;
+}
+</style>
+<body>
+<nav id="navbar" class="navbar navbar-default">
+<div class="container-fluid">
+<ul class="nav navbar-nav">
+<li><a href="#">Account</a></li>
+<li><a href="#">Transfer</a></li>
+<li><a href="#">Appointment</a></li>
+<li><a href="#">User Profile</a></li>
+<button type="button" class="btn btn-primary">Login</button>
+<button type="button" class="btn btn-danger">Check My Balance</button>
+</ul>
+</div>
+</nav>
+<div class="content">
+<p>To understand how smartly we are operating the appliances by
+touch.</p>
+<p>Client requested ticket will be generated with the unique id
+and details of the ticket will be stored in database.</p>
+<p>To understand how smartly we are operating the appliances by
+touch.</p>
+<p>Client requested ticket will be generated with the unique id
+and details of the ticket will be stored in database.</p>
+<p>To understand how smartly we are operating the appliances by
+touch.</p>
+<p>Client requested ticket will be generated with the unique id
+and details of the ticket will be stored in database.</p>
+<p>To understand how smartly we are operating the appliances by
+touch.</p>
+<p>Client requested ticket will be generated with the unique id
+and details of the ticket will be stored in database.</p>
+<p>To understand how smartly we are operating the appliances by
+touch.</p>
+<p>Client requested ticket will be generated with the unique id
+and details of the ticket will be stored in database.</p>
+<p>To understand how smartly we are operating the appliances by
+touch.</p>
+<p>Client requested ticket will be generated with the unique id
+and details of the ticket will be stored in database.</p>
+<p>To understand how smartly we are operating the appliances by
+touch.</p>
+<p>Client requested ticket will be generated with the unique id
+and details of the ticket will be stored in database.</p>
+<p>To understand how smartly we are operating the appliances by
+touch.</p>
+<p>Client requested ticket will be generated with the unique id
+and details of the ticket will be stored in database.</p>
+<p>To understand how smartly we are operating the appliances by
+touch.</p>
+<p>Client requested ticket will be generated with the unique id
+and details of the ticket will be stored in database.</p>
+<p>To understand how smartly we are operating the appliances by
+touch.</p>
+<p>Client requested ticket will be generated with the unique id
+and details of the ticket will be stored in database.</p>
+<p>To understand how smartly we are operating the appliances by
+touch.</p>
+<p>Client requested ticket will be generated with the unique id
+and details of the ticket will be stored in database.</p>
+<p>To understand how smartly we are operating the appliances by
+touch.</p>
+<p>Client requested ticket will be generated with the unique id
+and details of the ticket will be stored in database.</p>
+<p>To understand how smartly we are operating the appliances by
+touch.</p>
+<p>Client requested ticket will be generated with the unique id
+and details of the ticket will be stored in database.</p>
+<p>To understand how smartly we are operating the appliances by
+touch.</p>
+<p>Client requested ticket will be generated with the unique id
+and details of the ticket will be stored in database.</p>
+<p>To understand how smartly we are operating the appliances by
+touch.</p>
+<p>Client requested ticket will be generated with the unique id
+and details of the ticket will be stored in database.</p>
+</div>
+<script>
+window.onscroll = function() {
+getMyStickyHeader()
+};
+var navbar = document.getElementById("navbar");
+var stickyHeader = navbar.offsetTop;
+function getMyStickyHeader() {
+if (window.pageYOffset >= stickyHeader) {
+navbar.classList.add("stickyHeader")
+} else {
+navbar.classList.remove("stickyHeader");
+}
+}
+</script>
+</body>
+</html>

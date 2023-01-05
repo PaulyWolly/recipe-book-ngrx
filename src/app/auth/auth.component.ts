@@ -13,7 +13,8 @@ import { AlertComponent } from '../shared/alert/alert.component';
 import { PlaceholderDirective } from '../shared/placeholder/placeholder.directive';
 import * as fromApp from '../store/app.reducer';
 import * as AuthActions from './store/auth.actions';
-import * as RecipeActions from '../recipes/store/recipe.actions';
+import * as RecipesActions from '../recipes/store/recipe.actions';
+
 
 @Component({
   selector: 'app-auth',
@@ -24,7 +25,7 @@ export class AuthComponent implements OnInit, OnDestroy {
   isLoginMode = true;
   isLoading = false;
   error: string = null;
-  @ViewChild(PlaceholderDirective, { static: false }) alertHost: PlaceholderDirective;
+  @ViewChild(PlaceholderDirective) alertHost: PlaceholderDirective;
   loginEmail: any;
 
   private closeSub: Subscription;
@@ -43,6 +44,7 @@ export class AuthComponent implements OnInit, OnDestroy {
         this.showErrorAlert(this.error);
       }
     });
+
   }
 
   onSwitchMode() {
@@ -80,7 +82,7 @@ export class AuthComponent implements OnInit, OnDestroy {
   }
 
   autoFetchRecipes() {
-    this.store.dispatch(new RecipeActions.FetchRecipes());
+    this.store.dispatch(new RecipesActions.FetchRecipes());
   }
 
   ngOnDestroy() {

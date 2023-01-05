@@ -1,9 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { Store } from '@ngrx/store';
 
 import { LoggingService } from './logging.service';
 import * as fromApp from './store/app.reducer';
 import * as AuthActions from './auth/store/auth.actions';
+
+import { DOCUMENT, ViewportScroller } from '@angular/common';
+
+import { fromEvent, Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-root',
@@ -11,13 +17,27 @@ import * as AuthActions from './auth/store/auth.actions';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+
   constructor(
     private store: Store<fromApp.AppState>,
-    private loggingService: LoggingService
-  ) {}
+    private loggingService: LoggingService,
+    @Inject(DOCUMENT) private readonly document: Document,
+    private readonly viewport: ViewportScroller
+  ) { }
+
+  readonly showScroll$: Observable<boolean> = fromEvent(
+    this.document,
+    'scroll'
+  ).pipe(
+    map(() => this.viewport.getScrollPosition()?.[1] > 0)
+  );
 
   ngOnInit() {
     this.store.dispatch(new AuthActions.AutoLogin());
     this.loggingService.printLog('Hello from AppComponent ngOnInit');
+  }
+
+  onScrollToTop(): void {
+    this.viewport.scrollToPosition([0, 0]);
   }
 }

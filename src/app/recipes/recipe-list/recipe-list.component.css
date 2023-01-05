@@ -1,5 +1,9 @@
 .list-container {
   margin-bottom: 100px;
+  position: relative;
+  top: 100px;
+  width: 475px;
+  /* z-index: 1000; */
 }
 
 div.scroll {
@@ -7,14 +11,21 @@ div.scroll {
   padding:10px;
   background-color: rgb(235, 237, 235);
   width: 500px;
-  height: 650px;
+  height: 500px;
   overflow-x: hidden;
   overflow-y: auto;
   text-align:justify;
   border: 2px solid rgb(194, 192, 192) !important;
   border-radius: 5px;
+  z-index: 1;
 }
 
 div.scroll-row {
   border: 1px soid rgb(194, 192, 192);
+  /* z-index: 1001; */
+}
+
+div.recipe-edit.col-xs-12 {
+  position: relative;
+  left: -150px;
 }

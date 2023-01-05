@@ -20,7 +20,8 @@
       <button
         type="button"
         class="btn btn-primary dropdown-toggle">
-        Manage Recipe <span class="caret"></span>
+        Manage Recipe
+        <!-- <span class="caret"></span> -->
       </button>
       <ul class="dropdown-menu">
         <li><a (click)="onAddToShoppingList()" style="cursor: pointer;">To Shopping List</a></li>
@@ -32,8 +33,14 @@
 </div>
 &nbsp;
 <div class="row">
-  <div class="offset-md-2 detail-text col-xs-12">
-    {{ recipe.description }}
+  <div class="recipe-description offset-md-2 detail-text col-xs-12">
+    <textarea
+      type="text"
+      id="description"
+      class="form-control"
+      rows="3"
+      contenteditable="true"
+    >{{ recipe.description }}</textarea>
   </div>
 </div>
 <p>&nbsp;</p>
@@ -50,7 +57,13 @@
 </div>
 
 <div class="row">
-  <div class="offset-md-2 detail-text col-xs-12">
-    {{ recipe.directions }}
+  <div class="recipe-directions offset-md-2 detail-text col-xs-12">
+    <textarea
+      type="text"
+      id="directions"
+      class="form-control"
+      rows="8"
+      contenteditable="true"
+    >{{ recipe.directions }}</textarea>
   </div>
 </div>

@@ -1,7 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
+/* Styles to create a font shadow */
 .detail-text, .form-control {
   font-size: 16px;
 }
 
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+
+
+.font-shadow {
+  margin: 40px auto;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  color: #CFC547;
+  text-align: center;
+  letter-spacing: 5px;
+  text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+}

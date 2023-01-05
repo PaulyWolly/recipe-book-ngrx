@@ -13,7 +13,7 @@ import * as fromApp from '../../store/app.reducer';
   styleUrls: ['./shopping-edit.component.css']
 })
 export class ShoppingEditComponent implements OnInit, OnDestroy {
-  @ViewChild('f', { static: false }) slForm: NgForm;
+  @ViewChild('f') slForm: NgForm;
   subscription: Subscription;
   editMode = false;
   editedItem: Ingredient;

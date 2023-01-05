@@ -6,7 +6,7 @@ import { map } from 'rxjs/operators';
 import { Subscription } from 'rxjs';
 
 import * as fromApp from '../../store/app.reducer';
-import * as RecipeActions from '../store/recipe.actions';
+import * as RecipesActions from '../store/recipe.actions';
 
 @Component({
   selector: 'app-recipe-edit',
@@ -17,6 +17,8 @@ export class RecipeEditComponent implements OnInit, OnDestroy {
   id: number;
   editMode = false;
   recipeForm: FormGroup;
+  newRecipe = false;
+
 
   private storeSub: Subscription;
 
@@ -48,19 +50,19 @@ export class RecipeEditComponent implements OnInit, OnDestroy {
     if (this.editMode) {
       // this.recipeService.updateRecipe(this.id, this.recipeForm.value);
       this.store.dispatch(
-        new RecipeActions.UpdateRecipe({
+        new RecipesActions.UpdateRecipe({
           index: this.id,
           newRecipe: this.recipeForm.value
         })
       );
 
-      this.store.dispatch(new RecipeActions.StoreRecipes());
+      this.store.dispatch(new RecipesActions.StoreRecipes());
 
     } else {
       // NEW RECIPE
       // this.recipeService.addRecipe(this.recipeForm.value);
-      this.store.dispatch(new RecipeActions.AddRecipe(this.recipeForm.value));
-      this.store.dispatch(new RecipeActions.StoreRecipes());
+      this.store.dispatch(new RecipesActions.AddRecipe(this.recipeForm.value));
+      this.store.dispatch(new RecipesActions.StoreRecipes());
     }
     this.onCancel();
   }
@@ -68,7 +70,7 @@ export class RecipeEditComponent implements OnInit, OnDestroy {
   onAddIngredient() {
     (this.recipeForm.get('ingredients') as FormArray).push(
       new FormGroup({
-        name: new FormControl(null, Validators.required),
+        ingrName: new FormControl(null, Validators.required),
         amount: new FormControl(null, [
           Validators.required,
           Validators.pattern(/^[1-9]+[0-9]*$/)
@@ -139,7 +141,7 @@ export class RecipeEditComponent implements OnInit, OnDestroy {
     });
 
     // push new recipe to the DB
-    this.store.dispatch(new RecipeActions.StoreRecipes());
+    this.store.dispatch(new RecipesActions.StoreRecipes());
 
   }
 }
