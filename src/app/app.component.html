@@ -1,11 +1,7 @@
+<ng-container *ngIf="showScroll$ | async">
+  <app-scroll (scrollToTop)="onScrollToTop()"></app-scroll>
+</ng-container>
 <div class="main-container">
-  <!-- <div class="backgrond">
-    <div class="head">
-      <h1 class="text">HEADER</h1>
-
-    </div>
-  </div> -->
-
   <div class="container  ">
     <div class="row head">
       <div class="col-md-12">
@@ -15,4 +11,4 @@
     <router-outlet></router-outlet>
   </div>
 </div>
-
+<!--  -->
