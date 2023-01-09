@@ -1,10 +1,9 @@
 <div class="row">
   <div class="offset-md-2 col-xs-12">
-    <img
-      [src]="recipe.imagePath"
-      alt="{{ recipe.name }}"
-      class="img-responsive"
-      style="max-height: 300px;">
+    <img [src]="recipe.imagePath"
+         alt="{{ recipe.name }}"
+         class="img-responsive"
+         style="max-height: 300px;">
   </div>
 </div>
 <div class="row">
@@ -14,19 +13,20 @@
 </div>
 <div class="row">
   <div class="offset-md-2 col-xs-12">
-    <div
-      class="btn-group"
-      appDropdown>
-      <button
-        type="button"
-        class="btn btn-primary dropdown-toggle">
+    <div class="btn-group"
+         appDropdown>
+      <button type="button"
+              class="btn btn-primary dropdown-toggle">
         Manage Recipe
         <!-- <span class="caret"></span> -->
       </button>
       <ul class="dropdown-menu">
-        <li><a (click)="onAddToShoppingList()" style="cursor: pointer;">To Shopping List</a></li>
-        <li><a style="cursor: pointer;" (click)="onEditRecipe()">Edit Recipe</a></li>
-        <li><a style="cursor: pointer;" (click)="onDeleteRecipe()">Delete Recipe</a></li>
+        <li><a (click)="onAddToShoppingList()"
+             style="cursor: pointer;">To Shopping List</a></li>
+        <li><a style="cursor: pointer;"
+             (click)="onEditRecipe()">Edit Recipe</a></li>
+        <li><a style="cursor: pointer;"
+             (click)="onDeleteRecipe()">Delete Recipe</a></li>
       </ul>
     </div>
   </div>
@@ -34,22 +34,19 @@
 &nbsp;
 <div class="row">
   <div class="recipe-description offset-md-2 detail-text col-xs-12">
-    <textarea
-      type="text"
-      id="description"
-      class="form-control"
-      rows="3"
-      contenteditable="true"
-    >{{ recipe.description }}</textarea>
+    <textarea type="text"
+              id="description"
+              class="form-control"
+              rows="3"
+              contenteditable="true">{{ recipe.description }}</textarea>
   </div>
 </div>
 <p>&nbsp;</p>
 <div class="row">
   <div class="offset-md-2 col-xs-12">
     <ul class="list-group">
-      <li
-        class="list-group-item"
-        *ngFor="let ingredient of recipe.ingredients">
+      <li class="list-group-item"
+          *ngFor="let ingredient of recipe.ingredients">
         {{ ingredient.name }} - {{ ingredient.amount }}
       </li>
     </ul>
@@ -62,8 +59,8 @@
       type="text"
       id="directions"
       class="form-control"
-      rows="8"
-      contenteditable="true"
-    >{{ recipe.directions }}</textarea>
+      rows="15"
+      contenteditable="true">{{ recipe.directions }}
+    </textarea>
   </div>
 </div>
