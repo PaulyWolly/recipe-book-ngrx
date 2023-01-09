@@ -12,6 +12,7 @@ import { AuthEffects } from './auth/store/auth.effects';
 import { environment } from '../environments/environment';
 import { RecipeEffects } from './recipes/store/recipe.effects';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
@@ -23,8 +24,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ScrollComponent } from './scroll/scroll.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-
-
 
 @NgModule({
   declarations: [
@@ -49,6 +48,7 @@ import { MatIconModule } from '@angular/material/icon';
     ReactiveFormsModule,
     MatButtonModule,
     MatIconModule,
+    CommonModule
   ],
   bootstrap: [AppComponent]
   // providers: [LoggingService]
