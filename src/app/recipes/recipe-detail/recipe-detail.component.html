@@ -34,6 +34,7 @@
 &nbsp;
 <div class="row">
   <div class="recipe-description offset-md-2 detail-text col-xs-12">
+    <label for="description">Description</label>
     <textarea type="text"
               id="description"
               class="form-control"
@@ -45,6 +46,7 @@
 <div class="row">
   <div class="offset-md-2 col-xs-12">
     <ul class="list-group">
+      <label for="ingredients">Ingredients</label>
       <li class="list-group-item"
           *ngFor="let ingredient of recipe.ingredients">
         {{ ingredient.name }} - {{ ingredient.amount }}
@@ -55,6 +57,7 @@
 
 <div class="row">
   <div class="recipe-directions offset-md-2 detail-text col-xs-12">
+    <label for="directions">Directions</label>
     <textarea
       type="text"
       id="directions"
