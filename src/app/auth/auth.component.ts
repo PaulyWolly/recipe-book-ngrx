@@ -102,15 +102,6 @@ export class AuthComponent implements OnInit, AfterViewInit, OnDestroy, AfterCon
     this.store.dispatch(new RecipesActions.FetchRecipes());
   }
 
-  ngOnDestroy() {
-    if (this.closeSub) {
-      this.closeSub.unsubscribe();
-    }
-    if (this.storeSub) {
-      this.storeSub.unsubscribe();
-    }
-  }
-
   private showErrorAlert(message: string) {
     // const alertCmp = new AlertComponent();
     const alertCmpFactory = this.componentFactoryResolver.resolveComponentFactory(
@@ -132,6 +123,15 @@ export class AuthComponent implements OnInit, AfterViewInit, OnDestroy, AfterCon
     const TopScroll = 0;
     console.log('scrollTopOnLoad: ', this.scroll.nativeElement.scrollHeight, TopScroll);
     this.scroll.nativeElement.scrollTop = TopScroll;
-
   }
+
+  ngOnDestroy() {
+    if (this.closeSub) {
+      this.closeSub.unsubscribe();
+    }
+    if (this.storeSub) {
+      this.storeSub.unsubscribe();
+    }
+  }
+
 }
