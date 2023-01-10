@@ -1,4 +1,12 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Inject,
+  ViewChild,
+  ElementRef,
+  AfterViewInit,
+  AfterContentInit
+} from '@angular/core';
 import { Store } from '@ngrx/store';
 
 import { LoggingService } from './logging.service';
@@ -16,7 +24,9 @@ import { map } from 'rxjs/operators';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
+  @ViewChild('scroll')
+  scroll!: ElementRef;
 
   constructor(
     private store: Store<fromApp.AppState>,
@@ -35,9 +45,23 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.store.dispatch(new AuthActions.AutoLogin());
     this.loggingService.printLog('Hello from AppComponent ngOnInit');
+
+  }
+
+  ngAfterViewInit() { }
+
+  ngAfterContentInit() {
+    // this.scrollToTop();
+    document.body.scrollTop = 0;
   }
 
   onScrollToTop(): void {
     this.viewport.scrollToPosition([0, 0]);
+
+  }
+
+  scrollToTop() {
+    const ScrollTop = 0;
+    this.scroll.nativeElement.scrollTop = ScrollTop;
   }
 }

@@ -3,7 +3,10 @@ import {
   ComponentFactoryResolver,
   ViewChild,
   OnDestroy,
-  OnInit
+  OnInit,
+  ElementRef,
+  AfterViewInit,
+  AfterContentInit
 } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Subscription } from 'rxjs';
@@ -21,12 +24,14 @@ import * as RecipesActions from '../recipes/store/recipe.actions';
   templateUrl: './auth.component.html',
   styleUrls: ['./auth.component.css']
 })
-export class AuthComponent implements OnInit, OnDestroy {
+export class AuthComponent implements OnInit, AfterViewInit, OnDestroy, AfterContentInit {
   isLoginMode = true;
   isLoading = false;
   error: string = null;
   @ViewChild(PlaceholderDirective) alertHost: PlaceholderDirective;
   loginEmail: any;
+  @ViewChild('scroll')
+  scroll!: ElementRef<HTMLDivElement>;
 
   private closeSub: Subscription;
   private storeSub: Subscription;
@@ -34,7 +39,7 @@ export class AuthComponent implements OnInit, OnDestroy {
   constructor(
     private componentFactoryResolver: ComponentFactoryResolver,
     private store: Store<fromApp.AppState>
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.storeSub = this.store.select('auth').subscribe(authState => {
@@ -45,6 +50,18 @@ export class AuthComponent implements OnInit, OnDestroy {
       }
     });
 
+  }
+
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      console.log('timeout called');
+      this.scrollTop();
+    }, 500);
+  }
+
+  // this life-cycle hook is used to scroll to top on page refresh
+  ngAfterContentInit() {
+    document.documentElement.scrollTop = 0;
   }
 
   onSwitchMode() {
@@ -109,5 +126,12 @@ export class AuthComponent implements OnInit, OnDestroy {
       this.closeSub.unsubscribe();
       hostViewContainerRef.clear();
     });
+  }
+
+  scrollTop() {
+    const TopScroll = 0;
+    console.log('scrollTopOnLoad: ', this.scroll.nativeElement.scrollHeight, TopScroll);
+    this.scroll.nativeElement.scrollTop = TopScroll;
+
   }
 }

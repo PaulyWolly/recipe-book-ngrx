@@ -1,7 +1,8 @@
 <ng-container *ngIf="showScroll$ | async">
   <app-scroll (scrollToTop)="onScrollToTop()"></app-scroll>
 </ng-container>
-<div class="main-container">
+
+<div class="main-container" #scroll>
   <div class="container  ">
     <div class="row head">
       <div class="col-md-12">
