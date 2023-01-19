@@ -1,6 +1,6 @@
 # Recipe Book with NgRx
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0. (to come: upgrade to version 14)
 
 ## Development server
 
